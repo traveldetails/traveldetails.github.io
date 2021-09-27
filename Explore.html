@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html>
+
+	<link rel="stylesheet" href="main.css">
+ <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title> Explore </title>
+
+ <body>
+
+	<style>
+	 body{
+  background-image: url('background-explore.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+   </style>
+   <div class="col-md-6 col-sm-12">
+ <ul>
+  <style>
+  a:hover, a:active {
+  font-size: 120%;
+  color:white;
+    }
+  </style>
+  <li>   <a href="Explore.html">Explore</a>  </li> 
+  <li>   <a href="Ideas.html">Ideas</a>      </li>
+  <li>   <a href="index.html">Home</a>       </li>
+  <li>   <a href="Gallery.html">Gallery</a>  </li>
+  <li>   <a href="About.html">About Us</a>   </li>
+  <li>   <a href="Donate.html">Donate Us</a> </li>
+
+ </ul>
+</div>
+
+<style>
+ 
+ h1{
+ 	text-align: center;
+ 	font-weight: bold;
+ 	font-family: Times New Roman;
+ 	color: white;
+ 	font-size: 60px;
+ 	text-decoration: underline;
+
+ }
+ img{
+	border-radius: 10px;
+	max-width: 526px;
+	height: 392px;
+	padding: 50px;
+	position: center; 
+        }
+ </style>
+ </head>
+
+
+<br> <br>
+<div class = paragraph_explore>
+	 <style>
+ p:hover, p:active {
+  color:black;
+  background-color: white;
+  opacity: 1;
+ }
+  </style>
+
+ <p> <marquee> We have covered all the information you need to travel to the following destinations. Please click on “here” to know the exact step wise expenses that you are going to bear for the followed place. We’ll add more steps as we grow bigger. Thank You for being our visitor.
+ Choose the destinations😉 <br> </marquee>
+ </div>
+
+
+<div class = search_box>
+</head>
+<body>
+
+<h1> Attractions </h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Your Next destinations😉 .." title="Type Your Trip" align="center">
+
+<ul id="myUL">
+  <li><img src=Cindy.jpg> <a href="Kathmandu.html">Kathmandu, Nepal</a></li>
+  <li><img src=Cindy.jpg><a href="#">Manang, Nepal</a></li>
+
+  <li><img src=Cindy.jpg><a href="#">Janakpur, Nepal</a></li>
+  <li><img src=Cindy.jpg><a href="#">Delhi, India</a></li>
+
+  <li><img src=Cindy.jpg><a href="#">Manali, India</a></li>
+  <li><img src=Cindy.jpg><a href="#">Manakamna, Nepal</a></li>
+  <li><img src=Cindy.jpg><a href="#">Cindy</a></li>
+  <li><img src=Cindy.jpg><a href="#">Saurav</a></li>
+  <li><img src=Cindy.jpg><a href="#">Gaurav</a></li>
+  <li><img src=Cindy.jpg><a href="#">Shalinee</a></li>
+  </ul>
+
+  <script>
+ function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+ }
+ </script>
+ </div>
+
+</body>
+</html>
+
+	
